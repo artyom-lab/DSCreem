@@ -162,7 +162,7 @@ a {
       opacity: 1;
       color: #2A7CC7; }
   .navbar.sticky {
-    background: #06101C; }
+    background: rgba(6, 16, 28, 0.7); }
     @media (min-width: 992px) {
       .navbar.sticky {
         padding-top: 16px;
