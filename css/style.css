@@ -576,7 +576,8 @@ a {
   @media (max-width: 767.98px) {
     .modal-contact .modal-content {
       padding: 30px; } }
-.modal-contact .form-control {
+
+.my-control {
   padding-top: 4px;
   padding-bottom: 4px;
   height: 44px;
@@ -587,23 +588,38 @@ a {
   font-weight: 600;
   background: #BDBDBD;
   border: 1px solid #3C403D; }
-  .modal-contact .form-control::-webkit-input-placeholder {
+  .my-control::-webkit-input-placeholder {
     color: #252B42;
     font-weight: 600; }
-  .modal-contact .form-control::-moz-placeholder {
+  .my-control::-moz-placeholder {
     color: #252B42;
     font-weight: 600; }
-  .modal-contact .form-control:-ms-input-placeholder {
+  .my-control:-ms-input-placeholder {
     color: #252B42;
     font-weight: 600; }
-  .modal-contact .form-control:focus {
+  .my-control:focus {
     box-shadow: none;
     background: #FFF; }
-.modal-contact .form-textarea {
+
+.form-textarea {
   height: 110px !important;
   resize: none; }
-.modal-contact .btn-rose {
-  padding: 8px 40px; }
+
+.btn-outline-white {
+  background: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 9.5px 20px;
+  font-size: 14px; }
+  .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active {
+    background: transparent !important;
+    color: #FFF !important;
+    border-color: #FFF;
+    opacity: 0.6;
+    box-shadow: none; }
+
+.btn-rose-form {
+  min-width: 160px; }
 
 .card-video {
   display: block; }
@@ -663,5 +679,14 @@ a {
 .about {
   font-size: 16px;
   font-weight: 500; }
+
+.card-registration {
+  padding: 10px; }
+  @media (min-width: 576px) {
+    .card-registration {
+      background: #252B42;
+      border-radius: 10px;
+      border: 1px solid #737373;
+      padding: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

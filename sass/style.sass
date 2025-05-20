@@ -581,34 +581,50 @@ a
 		border: 1px solid $color-gray2
 		@media (max-width: 767.98px)
 			padding: 30px
-	.form-control
-		padding-top: 4px
-		padding-bottom: 4px
-		height: 44px
-		border-radius: 3px
-		padding: 10px
-		width: 100% !important
-		font-size: 14px
+
+.my-control
+	padding-top: 4px
+	padding-bottom: 4px
+	height: 44px
+	border-radius: 3px
+	padding: 10px
+	width: 100% !important
+	font-size: 14px
+	font-weight: 600
+	background: $color-gray3
+	border: 1px solid $color-border
+	&::-webkit-input-placeholder
+		color: $color-modal
 		font-weight: 600
-		background: $color-gray3
-		border: 1px solid $color-border
-		&::-webkit-input-placeholder
-			color: $color-modal
-			font-weight: 600
-		&::-moz-placeholder
-			color: $color-modal
-			font-weight: 600
-		&:-ms-input-placeholder
-			color: $color-modal
-			font-weight: 600
-		&:focus
-			box-shadow: none
-			background: $color-white
-	.form-textarea
-		height: 110px !important
-		resize: none
-	.btn-rose
-		padding: 8px 40px
+	&::-moz-placeholder
+		color: $color-modal
+		font-weight: 600
+	&:-ms-input-placeholder
+		color: $color-modal
+		font-weight: 600
+	&:focus
+		box-shadow: none
+		background: $color-white
+
+.form-textarea
+	height: 110px !important
+	resize: none
+
+.btn-outline-white
+	background: transparent
+	color: $color-white
+	border: 1px solid $color-white
+	padding: 9.5px 20px
+	font-size: 14px
+	&:hover, &:focus, &:active
+		background: transparent !important
+		color: $color-white !important
+		border-color: $color-white
+		opacity: 0.6
+		box-shadow: none
+
+.btn-rose-form
+	min-width: 160px
 
 .card-video
 	display: block
@@ -669,3 +685,10 @@ a
 	font-size: 16px
 	font-weight: 500
 
+.card-registration
+	padding: 10px
+	@media (min-width: 576px)
+		background: $color-modal
+		border-radius: 10px
+		border: 1px solid rgba(115, 115, 115, 1)
+		padding: 40px
