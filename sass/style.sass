@@ -41,8 +41,11 @@ $color-dark: #06101C
 $color-rose: #E211F7
 $color-gray: #686D73
 $color-gray2: #737373
+$color-gray3: #BDBDBD
 $color-blue: #15BEFD
 $color-darkblue: #151837
+$color-modal: #252B42
+$color-border: #3C403D
 
 * 
 	outline: none !important
@@ -153,6 +156,7 @@ a
 	.navbar-nav
 		@media (max-width: 1199.98px)
 			overflow: auto
+			height: 100%
 		.nav-item
 			@media (max-width: 1199.98px)
 				margin-bottom: 24px
@@ -514,11 +518,11 @@ a
 					margin: 5px
 					width: 10px
 					height: 10px
-					background: #3C403D
+					background: $color-border
 					transition: $transition
 				&:hover, &.active
 					span
-						background: #BDBDBD
+						background: $color-gray3
 
 .card-tariff
 	border: 1px solid $color-gray2
@@ -545,3 +549,45 @@ a
 		@media (max-width: 767.98px)
 			padding: 15px
 
+// MODAL
+
+.form-group
+	margin-bottom: 20px
+
+.modal-contact
+	.modal-content
+		background: $color-modal
+		font-size: 16px
+		border-radius: 10px
+		padding: 40px
+		border: 1px solid $color-gray2
+		@media (max-width: 767.98px)
+			padding: 20px 16px
+	.form-control
+		padding-top: 4px
+		padding-bottom: 4px
+		height: 44px
+		border-radius: 3px
+		padding: 10px
+		width: 100% !important
+		font-size: 14px
+		font-weight: 600
+		background: $color-gray3
+		border: 1px solid $color-border
+		&::-webkit-input-placeholder
+			color: $color-modal
+			font-weight: 600
+		&::-moz-placeholder
+			color: $color-modal
+			font-weight: 600
+		&:-ms-input-placeholder
+			color: $color-modal
+			font-weight: 600
+		&:focus
+			box-shadow: none
+			background: $color-white
+	.form-textarea
+		height: 110px !important
+		resize: none
+	.btn-rose
+		padding: 8px 40px

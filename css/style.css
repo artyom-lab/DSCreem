@@ -144,7 +144,8 @@ a {
           width: 50px; } }
   @media (max-width: 1199.98px) {
     .navbar .navbar-nav {
-      overflow: auto; } }
+      overflow: auto;
+      height: 100%; } }
   @media (max-width: 1199.98px) {
     .navbar .navbar-nav .nav-item {
       margin-bottom: 24px; } }
@@ -545,5 +546,46 @@ a {
     @media (max-width: 767.98px) {
       .card-tariff .card-content {
         padding: 15px; } }
+
+.form-group {
+  margin-bottom: 20px; }
+
+.modal-contact .modal-content {
+  background: #252B42;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid #737373; }
+  @media (max-width: 767.98px) {
+    .modal-contact .modal-content {
+      padding: 20px 16px; } }
+.modal-contact .form-control {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 44px;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100% !important;
+  font-size: 14px;
+  font-weight: 600;
+  background: #BDBDBD;
+  border: 1px solid #3C403D; }
+  .modal-contact .form-control::-webkit-input-placeholder {
+    color: #252B42;
+    font-weight: 600; }
+  .modal-contact .form-control::-moz-placeholder {
+    color: #252B42;
+    font-weight: 600; }
+  .modal-contact .form-control:-ms-input-placeholder {
+    color: #252B42;
+    font-weight: 600; }
+  .modal-contact .form-control:focus {
+    box-shadow: none;
+    background: #FFF; }
+.modal-contact .form-textarea {
+  height: 110px !important;
+  resize: none; }
+.modal-contact .btn-rose {
+  padding: 8px 40px; }
 
 /*# sourceMappingURL=style.css.map */

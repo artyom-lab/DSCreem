@@ -360,7 +360,7 @@
             </div>
             <div class="col-auto">
               <h6>
-                <a href="#!">Contact Us</a>
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modal">Contact Us</a>
               </h6>
             </div>
           </div>
@@ -371,6 +371,34 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal fade modal-contact" id="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="text-center mb-1">
+          <h2 class="mb-4">Про нас</h2>
+          <p>Виникли складнощі? Напишіть нам</p>
+        </div>
+        <form>
+          <div class="form-group">
+            <h5>Ваше Ім'я</h5>
+            <input type="text" class="form-control" placeholder="Ваше Ім'я">
+          </div>
+          <div class="form-group">
+            <h5>Email</h5>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <h5>Повідомлення</h5>
+            <textarea type="text" class="form-control form-textarea" placeholder="Повідомлення"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-rose">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
