@@ -299,22 +299,24 @@ a {
   .to-up:hover {
     opacity: 0.7; }
 
-.header {
+.header > .container {
+  padding-top: 186px;
+  padding-bottom: 48px; }
+  @media (max-width: 991.98px) {
+    .header > .container {
+      padding-top: 120px; } }
+  @media (max-width: 575.98px) {
+    .header > .container {
+      padding-top: 92px; } }
+
+.header-main {
   overflow: hidden; }
-  .header > .container {
-    padding-top: 186px;
+  .header-main > .container {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 48px; }
+    flex-direction: column; }
     @media (min-width: 1200px) {
-      .header > .container {
+      .header-main > .container {
         min-height: 100vh; } }
-    @media (max-width: 991.98px) {
-      .header > .container {
-        padding-top: 120px; } }
-    @media (max-width: 575.98px) {
-      .header > .container {
-        padding-top: 92px; } }
 
 .header-content {
   position: relative;
@@ -558,7 +560,7 @@ a {
   border: 1px solid #737373; }
   @media (max-width: 767.98px) {
     .modal-contact .modal-content {
-      padding: 20px 16px; } }
+      padding: 30px; } }
 .modal-contact .form-control {
   padding-top: 4px;
   padding-bottom: 4px;
