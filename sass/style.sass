@@ -539,11 +539,11 @@ a
 	font-size: 16px
 	display: flex 
 	flex-direction: column 
+	height: 100%
 	@media (max-width: 767.98px)
 		font-size: 14px
 		h3 
 			font-size: 24px
-	height: 100%
 	.card-content
 		padding: 30px
 		display: flex 
@@ -551,6 +551,21 @@ a
 		flex-grow: 1
 		@media (max-width: 767.98px)
 			padding: 15px
+
+.user-box
+	color: rgba(226, 17, 247, 1)
+	font-size: 16px
+	font-weight: bold
+	text-decoration: underline
+	white-space: nowrap
+	span 
+		vertical-align: middle
+	.img-avatar
+		display: inline-block
+		width: 32px
+		height: 32px
+		border-radius: 100px
+		margin-right: 2px
 
 // MODAL
 
@@ -594,3 +609,63 @@ a
 		resize: none
 	.btn-rose
 		padding: 8px 40px
+
+.card-video
+	display: block
+	@media (min-width: 1200px)
+		&:hover
+			.bg-wrap
+				transform: scale(1.1) 
+	.card-content
+		margin-top: 10px
+		font-size: 16px
+		line-height: 1.6
+		.check
+			display: inline-block
+			width: 32px
+			height: 32px
+			background: rgba(2, 188, 125, 1)
+			text-align: center
+			border-radius: 8px
+			line-height: 28px
+			vertical-align: middle
+			margin-right: 6px
+
+.img-wrap 
+	overflow: hidden
+	transition: $transition
+	position: relative
+	border-radius: 5px
+	.bg-wrap
+		transition: $transition
+	.time
+		display: inline-block
+		position: absolute
+		font-weight: 600
+		font-size: 14px
+		bottom: 10px
+		right: 18px
+		padding: 8px 10px
+		border-radius: 5px
+		background: rgba(0, 0, 0, 0.6)
+
+.bg-img 
+	background-size: cover
+	background-position: center center
+	height: 100%
+
+.portrait
+	max-width: 40%
+	float: left
+	margin-bottom: 18px
+	margin-right: 30px
+	@media (max-width: 575.98px)
+		max-width: 100%
+		margin-right: 0
+	img
+		border-radius: 10px
+
+.about 
+	font-size: 16px
+	font-weight: 500
+
