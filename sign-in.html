@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DSCreem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#!">
+        <img src="img/logo.png" alt="">
+      </a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="container">
+      <div class="mt-5 mt-lg-0">
+        <h2 class="text-center mb-4">
+          <span id="hRegistration">Реєстрація на Dscreem</span>
+          <span id="hEntrance" style="display: none;">Вхід на Dscreem</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="card-registration">
+              <div class="mb-4">
+                <div class="nav nav-tabs nav-tabs-registration" role="tablist">
+                  <a class="nav-link mb-2 mb-sm-0 active" data-bs-toggle="tab" href="#reg1" aria-selected="false" role="tab" tabindex="-1">Реєстрація</a>
+                  <a class="nav-link mb-2 mb-sm-0" data-bs-toggle="tab" href="#reg2" aria-selected="true" role="tab">Вхід</a>
+                </div> 
+              </div>
+              <div class="tab-content tab-content-registration">
+                <div class="tab-pane fade show active" id="reg1">
+                  <form>
+                    <div class="form-group">
+                      <h5>Email*</h5>
+                      <input type="email" class="form-control my-control" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                      <h5>Пароль*</h5>
+                      <input type="password" class="form-control my-control" placeholder="Пароль*">
+                    </div>
+                    <div class="form-group">
+                      <h5>Повторіть пароль*</h5>
+                      <input type="password" class="form-control my-control" placeholder="Повторіть пароль*">
+                    </div>
+                    <div class="form-group">
+                      <label class="check-group">
+                        <input type="checkbox">
+                        <div>Я приймаю Умови та положення, Політика конфіденційності</div>
+                      </label>
+                      <label class="check-group">
+                        <input type="checkbox">
+                        <div>Мені 18 років або більше</div>
+                      </label>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-auto order-sm-2 mb-3 mb-sm-0">
+                        <button class="btn btn-rose btn-rose-form">Зареєструватись</button>
+                      </div>
+                      <div class="col-auto order-sm-1">
+                        <a href="#!" class="btn btn-outline-white btn-rose-form">На головну</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="reg2">
+                  <form>
+                    <div class="form-group">
+                      <h5>Email*</h5>
+                      <input type="email" class="form-control my-control" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                      <h5>Пароль*</h5>
+                      <input type="password" class="form-control my-control" placeholder="Пароль*">
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-auto order-sm-2 mb-3 mb-sm-0">
+                        <button class="btn btn-rose btn-rose-form">Увійти</button>
+                      </div>
+                      <div class="col-auto order-sm-1">
+                        <a href="#!" class="btn btn-outline-white btn-rose-form">На головну</a>
+                      </div>
+                    </div>
+                    <div class="mt-4 fz-14">Забули пароль? Відновити можна на сторінці <a href="#!" class="link-access">Відновлення доступу</a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const hReg = document.getElementById('hRegistration');
+    const hEnt = document.getElementById('hEntrance');
+
+    document.querySelector('a[href="#reg1"]').addEventListener('click', () => {
+      hReg.style.display = 'inline';
+      hEnt.style.display = 'none';
+    });
+
+    document.querySelector('a[href="#reg2"]').addEventListener('click', () => {
+      hReg.style.display = 'none';
+      hEnt.style.display = 'inline';
+    });
+  });
+  </script>
+</body>
+</html>
+

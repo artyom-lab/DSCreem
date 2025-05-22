@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DSCreem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#!">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="dot-sandwich collapsed d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></button>
+      <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header p-0 mb-4">
+          <img src="img/logo.png" alt="" width="57">
+          <a href=#! class="" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="img/arrow-menu.png" alt="">
+          </a>
+        </div>
+        <ul class="navbar-nav ms-xl-auto">
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Арбітражний скрінер</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Відеоматеріали</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Тарифи</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Підтримка</a>
+          </li>
+          <li class="nav-item mt-4 mt-xl-0">
+            <div class="language-selector">
+              <div class="selected-flag" id="selectedFlag">
+                <img src="https://flagcdn.com/w40/ua.png" alt="UA">
+              </div>
+              <div class="flag-options" id="flagOptions">
+                <img src="https://flagcdn.com/w40/ua.png" alt="UA" data-lang="ua">
+                <img src="https://flagcdn.com/w40/gb.png" alt="EN" data-lang="en">
+                <img src="https://flagcdn.com/w40/es.png" alt="ES" data-lang="es">
+              </div>
+              <img src="img/arrow-down.png" alt="" class="arrow">
+            </div>
+          </li>
+          <li class="nav-item order-first order-xl-last">
+            <div class="ms-xl-3">
+              <a href="#!" class="user-box">
+                <span class="img-avatar bg-img" style="background-image: url(img/avatar.png)"></span>
+                <span>User_2025_1234</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="container">
+      <div class="mt-5 mt-lg-0">
+        <h2 class="text-center mb-4">Налаштування користувача</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="card-registration card-basic mt-5">
+              <form>
+                <div class="drop-zone">
+                  <img src="img/avatar-edit.svg" alt="" class="avatar-edit">
+                  <span class="drop-zone__prompt"></span>
+                  <input type="file" name="myFile" class="drop-zone__input">
+                </div>
+                <div class="info-basic pb-4">
+                  <h3 class="text-center mb-4">Основна Інформація</h3>
+                  <div class="form-group">
+                    <h5>Ім'я користувача</h5>
+                    <div class="row row-5 align-items-center">
+                      <div class="col">
+                        <input type="text" class="form-control my-control" placeholder="User_2025_1234">
+                      </div>
+                      <div class="col-auto fz-0">
+                        <a href="#!"><img src="img/edit.svg" alt=""></a>
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="form-group">
+                    <h5>Email*</h5>
+                    <div class="row row-5 align-items-center">
+                      <div class="col">
+                        <input type="email" class="form-control my-control" placeholder="mailgoogle@gmail.com">
+                      </div>
+                      <div class="col-auto fz-0">
+                        <a href="#!"><img src="img/edit.svg" alt=""></a>
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="form-group">
+                    <h5>Пароль*</h5>
+                    <div class="row row-5 align-items-center">
+                      <div class="col">
+                        <input type="password" class="form-control my-control" placeholder="************">
+                      </div>
+                      <div class="col-auto fz-0">
+                        <a href="#!"><img src="img/edit.svg" alt=""></a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-center mb-4">Особиста інформація</h3>
+                  <div class="form-group">
+                    <h5>Ім'я</h5>
+                    <input type="text" class="form-control my-control" placeholder="Данііл">
+                  </div>
+                  <div class="form-group">
+                    <h5>Прізвище</h5>
+                    <input type="text" class="form-control my-control" placeholder="Прізвище">
+                  </div>
+                  <div class="form-group">
+                    <h5>Номер телефону</h5>
+                    <input type="text" class="form-control my-control" placeholder="+380123456789">
+                  </div>
+                  <div class="row justify-content-center mt-5">
+                    <div class="col-auto">
+                      <button class="btn btn-rose btn-rose-form">Зберегти</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class=" d-none d-md-block">
+        <div class="row align-items-center pb-4">
+          <div class="col">
+            <a href="#!">
+              <img src="img/logo.png" alt="" width="43">
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="row">
+              <div class="col-auto">
+                <h5>
+                  <a href="#!">Арбітражний скрінер</a>
+                </h5>
+              </div>
+              <div class="col-auto">
+                <h5>
+                  <a href="#!">Відеоматеріали</a>
+                </h5>
+              </div>
+              <div class="col-auto">
+                <h5>
+                  <a href="#!">Тарифи</a>
+                </h5>
+              </div>
+              <div class="col-auto">
+                <h5>
+                  <a href="#!">Про нас</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="row align-items-center justify-content-between pt-md-2 fz-14">
+        <div class="col-12 col-md-auto order-md-last">
+          <div class="row row-5 align-items-center justify-content-between mb-4 mb-md-0">
+            <div class="col-auto d-md-none">
+              <a href="#!">
+                <img src="img/logo.png" alt="" width="43">
+              </a>
+            </div>
+            <div class="col-auto">
+              <div class="row row-5 justify-content-center justify-content-md-end ">
+                <div class="col-auto">
+                  <a href="#!">
+                    <img src="img/youtube.svg" alt="">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#!">
+                    <img src="img/linkedin.svg" alt="">
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#!">
+                    <img src="img/facebook.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-md-none">
+              <span class="to-up">
+                <img src="img/arrow-up.png" alt="">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-auto pb-2 pb-md-0">
+          <div class="row justify-content-center justify-content-md-start">
+            <div class="col-auto">
+              <h6>
+                <a href="#!">Privacy & Terms</a>
+              </h6>
+            </div>
+            <div class="col-auto">
+              <h6>
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modal">Contact Us</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-auto text-center">
+          <div class="copyright">Copyright @ 2025 Dscreem</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade modal-contact" id="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="text-center mb-1">
+          <h2 class="mb-4">Про нас</h2>
+          <p>Виникли складнощі? Напишіть нам</p>
+        </div>
+        <form>
+          <div class="form-group">
+            <h5>Ваше Ім'я</h5>
+            <input type="text" class="form-control my-control" placeholder="Ваше Ім'я">
+          </div>
+          <div class="form-group">
+            <h5>Email</h5>
+            <input type="email" class="form-control my-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <h5>Повідомлення</h5>
+            <textarea type="text" class="form-control my-control form-textarea" placeholder="Повідомлення"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-rose btn-rose-form">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    let to_top_btn = document.querySelector(".to-up");
+
+    to_top_btn.addEventListener("click", function () {
+        window.scrollBy({
+            top: -document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+      });
+    });
+
+  </script>
+</body>
+</html>
+
