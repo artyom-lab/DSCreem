@@ -1,0 +1,8 @@
+<svg id="Styles_Icons_arrow-left" data-name="Styles/Icons/arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6.539" height="11.213" viewBox="0 0 6.539 11.213">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="angle-left" d="M6.427.674a.353.353,0,0,1,0,.517L2.011,5.607l4.416,4.416a.353.353,0,0,1,0,.517l-.562.562a.353.353,0,0,1-.517,0L.112,5.865a.353.353,0,0,1,0-.517L5.348.112a.353.353,0,0,1,.517,0Z" fill="#17307a"/>
+    </clipPath>
+  </defs>
+  <path id="angle-left-2" data-name="angle-left" d="M6.427.674a.353.353,0,0,1,0,.517L2.011,5.607l4.416,4.416a.353.353,0,0,1,0,.517l-.562.562a.353.353,0,0,1-.517,0L.112,5.865a.353.353,0,0,1,0-.517L5.348.112a.353.353,0,0,1,.517,0Z" fill="#17307a"/>
+</svg>

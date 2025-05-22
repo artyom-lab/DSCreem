@@ -43,9 +43,16 @@ $color-gray: #686D73
 $color-gray2: #737373
 $color-gray3: #BDBDBD
 $color-blue: #15BEFD
+$color-blue2: #23A6F0
 $color-darkblue: #151837
 $color-modal: #252B42
 $color-border: #3C403D
+$color-green: #22D49F
+$color-green2: #2B5E5E
+$color-red: #E74040
+$color-red2: #5F3141
+$color-yellow: #FFCC00
+$color-yellow2: #665B2E
 
 * 
 	outline: none !important
@@ -734,7 +741,7 @@ label
 
 .link-access
 	font-size: 14px
-	color: #23A6F0
+	color: $color-blue2
 	text-decoration: underline !important
 
 .nav-tabs-registration
@@ -818,3 +825,129 @@ label
 	overflow: hidden
 	background-image: url(../img/avatar.png)
 	background-size: cover
+
+.table-box
+	.table-header
+		padding: 0 16px
+		margin-bottom: 4px
+		font-size: 15px
+		@media (max-width: 991.98px)
+			display: none
+		.category
+			svg path 
+				transition: $transition
+			&:hover
+				svg path 
+					fill: $color-white
+	.table-content
+		.content-row
+			border: 1px solid $color-gray2
+			border-radius: 10px
+			background: #252B42
+			margin-bottom: 10px
+			padding: 0 16px
+			color: $color-white
+			font-size: 14px
+			@media (max-width: 991.98px)
+				font-size: 12px
+				padding: 0 10px
+			>.row 
+				min-height: 48px
+				@media (max-width: 991.98px)
+					min-height: 96px
+			.img-box
+				height: 20px
+				img 
+					height: 100%
+				@media (max-width: 991.98px)
+					height: 15px
+					min-width: 74px
+			.category
+				font-size: 10px
+				@media (min-width: 992px)
+					display: none
+
+.w-12
+	width: 12px
+
+.income
+	display: inline-block
+	width: 68px
+	height: 28px
+	border: 1px solid 
+	border-radius: 4px
+	padding: 3px 
+	font-size: 14px
+	text-align: center 
+	&.green
+		color: $color-green
+		background: $color-green2
+		border-color: $color-green
+	&.red
+		color: $color-red
+		background: $color-red2
+		border-color: $color-red
+	&.yellow
+		color: $color-yellow
+		background: $color-yellow2
+		border-color: $color-yellow
+
+label
+	&.check-coin
+		margin-bottom: 0
+		cursor: pointer
+		transition: $transition
+		div
+			background-image: url(../img/star1.svg)
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: cover
+			transition: $transition
+			width: 17px
+			height: 17px
+		input
+			&:checked ~ div
+				background-image: url(../img/star2.svg)
+		&:hover
+			background-image: url(../img/star2.svg)
+
+.pagination
+	padding-left: 0
+	padding-right: 0
+	.page-item
+		margin-left: 10px
+		margin-right: 10px
+		@media (max-width: 575.98px)
+			margin-left: 4px
+			margin-right: 4px
+		.page-link, span
+			font-size: 16px
+			font-weight: 700
+			padding: 12px 
+			border-radius: 6px
+			border: 0
+			color: $color-white
+			background: transparent
+			min-width: 48px
+			height: 48px
+			text-align: center
+			@media (max-width: 575.98px)
+				height: 36px
+				min-width: 36px
+				padding: 6px 
+				font-size: 14px
+			img 
+				transition: $transition
+		.page-link
+			&:hover, &.active
+				color: $color-blue2
+				opacity: 1
+			&:focus
+				box-shadow: none
+		&:first-child, &:last-child
+			.page-link
+				border: 1px solid $color-gray2
+				&:hover 
+					svg path 
+						fill: $color-blue2
+
